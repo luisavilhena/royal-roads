@@ -1,0 +1,74 @@
+@import 'structure.less';
+
+#areas {
+	background-color: @dark-green;
+	.areas-content {
+		padding: 100px;
+		text-align: center;
+		color: @dark-blue;
+		max-width: 875px;
+		margin: 0 auto;
+		h2 {
+			padding-bottom: 40px;
+		}
+		.areas-drop-down {
+			margin: 40px auto;
+			position: relative;
+			width: 360px;
+			height: 50px;
+			background-color: white;
+			color: @gray;
+			box-shadow: 2px 2px rgba(211, 211, 211, 0.6);
+			z-index: 10;
+			> div {
+				display: flex;
+				justify-content: center;
+				justify-content: space-around;
+				align-items: center;
+				padding-top: 15px;
+				p {
+					font-size: 18px; //size different
+				}
+			}
+			> ul {
+				display: none;
+				position: absolute;
+				list-style-type: none;
+				top: 50px;
+				left: 0;
+				right: 0;
+				> li {
+					background-color: white;
+					text-align: left;
+					> a {
+						padding: 15px;
+						display: block;
+						text-decoration: none;
+						color: @dark-blue;
+					}
+					&:hover {
+						background-color: @dark-blue;
+						a {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		.areas-drop-down-open {
+			> ul {
+				display: block;
+			}
+		}
+	}
+}
+@media screen and (max-width: @min-width) {
+	#areas {
+		.areas-content {
+			padding: 20px;
+			.areas-drop-down {
+				width: 315px;
+			}
+		}
+	}
+}

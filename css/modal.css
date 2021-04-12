@@ -1,0 +1,258 @@
+h1 {
+  font-size: 110px;
+  font-family: font-auto1-black-smcp;
+}
+h2 {
+  font-size: 52px;
+  font-family: font-auto1-black-smcp;
+}
+h3 {
+  font-family: roboto-black;
+  font-size: 48px;
+}
+h4 {
+  font-size: 26px;
+  font-family: font-auto1-black-smcp;
+}
+h5 {
+  font-family: roboto-bold;
+  font-size: 24px;
+}
+h6 {
+  font-family: roboto-bold;
+  font-size: 22px;
+  font-weight: 600px;
+}
+p {
+  font-size: 24px;
+  font-family: roboto;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.t1 {
+  font-family: font-auto1-black;
+  font-size: 35px;
+  font-feature-settings: "smcp" off;
+}
+.t2 {
+  font-family: font-auto1-black-lf;
+  font-size: 35px;
+}
+.t3 {
+  font-family: font-auto1-black-smcp;
+  font-size: 35px;
+}
+.t4 {
+  font-family: font-auto1-bold;
+  font-size: 35px;
+}
+.t5 {
+  font-family: font-auto1-light;
+  font-size: 35px;
+}
+.t6 {
+  font-family: font-auto1-regular;
+  font-size: 35px;
+}
+.t7 {
+  font-family: font-auto1-regular-smcp;
+  font-size: 35px;
+}
+.t8 {
+  font-family: font-auto1-bold-smcp;
+  font-size: 35px;
+}
+@font-face {
+  font-family: font-auto1-black;
+  src: url('../resources/font/Font-Auto1/Auto1Black.otf') format('opentype');
+}
+@font-face {
+  font-family: font-auto1-black-lf;
+  src: url('../resources/font/Font-Auto1/Auto1BlackLF.otf');
+}
+@font-face {
+  font-family: font-auto1-black-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1BlackSmCp.otf');
+}
+@font-face {
+  font-family: font-auto1-bold;
+  src: url('../resources/font/Font-Auto1/Auto1Bold.otf');
+}
+@font-face {
+  font-family: font-auto1-light;
+  src: url('../resources/font/Font-Auto1/Auto1Light.otf');
+}
+@font-face {
+  font-family: font-auto1-regular;
+  src: url('../resources/font/Font-Auto1/Auto1Regular.otf');
+}
+@font-face {
+  font-family: font-auto1-regular-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1RegularSmCp.otf');
+}
+@font-face {
+  font-family: font-auto1-bold-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1BoldSmCp.otf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: roboto;
+  src: url('../resources/font/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: roboto-black;
+  src: url('../resources/font/Roboto/Roboto-Black.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url('../resources/font/Roboto/Roboto-Bold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: roboto-thin;
+  src: url('../resources/font/Roboto/Roboto-Thin.ttf');
+  font-weight: 300;
+}
+#modal {
+  overflow: scroll;
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F7F7F7;
+  color: #1F2A44;
+  text-align: center;
+  display: none;
+}
+#modal.modal-open {
+  display: block;
+}
+#modal.modal-open > div {
+  padding: 100px;
+}
+#modal.modal-open > div h4 {
+  margin-bottom: 20px;
+}
+#modal.modal-open > div h2 {
+  margin-bottom: 20px;
+}
+#modal.modal-open > div input {
+  font-family: roboto;
+  width: 450px;
+  height: 70px;
+  border: none;
+  background-color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding-left: 20px;
+  box-shadow: 2px 2px rgba(211, 211, 211, 0.19);
+}
+#modal.modal-open > div select {
+  font-family: roboto;
+  width: 470px;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #1F2A44;
+  color: white;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-indent: 1px;
+  text-overflow: '';
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../resources/icon/arrow-sm.svg");
+  background-origin: content-box;
+  background-position: right -1.875rem center;
+  background-repeat: no-repeat;
+  background-size: 60px 9px;
+  box-shadow: 2px 2px rgba(211, 211, 211, 0.8);
+}
+#modal.modal-open > div .button {
+  border: none;
+  color: white;
+  background-color: #29B3C9;
+  box-shadow: 2px 2px rgba(211, 211, 211, 0.8);
+  padding: 20px 80px;
+  cursor: pointer;
+}
+#modal.modal-open > div .button:hover {
+  background-color: #2D82B1;
+  transition: background-color 0.3s;
+}
+#modal #modal-trigger {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  display: block;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+  width: 30px;
+  height: 40px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#modal #modal-trigger > span {
+  display: block;
+  position: absolute;
+  padding: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #1F2A44;
+  opacity: 1;
+  left: 1px;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+#modal #modal-trigger > span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+  left: 0px;
+}
+#modal #modal-trigger > span:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 0px;
+}
+#modal #modal-trigger:hover > span:nth-child(1) {
+  transform: rotate(180deg);
+  top: 5px;
+}
+#modal #modal-trigger:hover > span:nth-child(2) {
+  transform: rotate(0deg);
+  top: 5px;
+}
+@media screen and (max-width: 650px) {
+  #modal > div {
+    padding: 20px;
+  }
+  #modal > div input {
+    padding-left: 10px;
+    width: 293px;
+  }
+  #modal > div select {
+    padding-left: 10px;
+    width: 305px;
+  }
+}

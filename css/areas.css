@@ -1,0 +1,200 @@
+h1 {
+  font-size: 110px;
+  font-family: font-auto1-black-smcp;
+}
+h2 {
+  font-size: 52px;
+  font-family: font-auto1-black-smcp;
+}
+h3 {
+  font-family: roboto-black;
+  font-size: 48px;
+}
+h4 {
+  font-size: 26px;
+  font-family: font-auto1-black-smcp;
+}
+h5 {
+  font-family: roboto-bold;
+  font-size: 24px;
+}
+h6 {
+  font-family: roboto-bold;
+  font-size: 22px;
+  font-weight: 600px;
+}
+p {
+  font-size: 24px;
+  font-family: roboto;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.t1 {
+  font-family: font-auto1-black;
+  font-size: 35px;
+  font-feature-settings: "smcp" off;
+}
+.t2 {
+  font-family: font-auto1-black-lf;
+  font-size: 35px;
+}
+.t3 {
+  font-family: font-auto1-black-smcp;
+  font-size: 35px;
+}
+.t4 {
+  font-family: font-auto1-bold;
+  font-size: 35px;
+}
+.t5 {
+  font-family: font-auto1-light;
+  font-size: 35px;
+}
+.t6 {
+  font-family: font-auto1-regular;
+  font-size: 35px;
+}
+.t7 {
+  font-family: font-auto1-regular-smcp;
+  font-size: 35px;
+}
+.t8 {
+  font-family: font-auto1-bold-smcp;
+  font-size: 35px;
+}
+@font-face {
+  font-family: font-auto1-black;
+  src: url('../resources/font/Font-Auto1/Auto1Black.otf') format('opentype');
+}
+@font-face {
+  font-family: font-auto1-black-lf;
+  src: url('../resources/font/Font-Auto1/Auto1BlackLF.otf');
+}
+@font-face {
+  font-family: font-auto1-black-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1BlackSmCp.otf');
+}
+@font-face {
+  font-family: font-auto1-bold;
+  src: url('../resources/font/Font-Auto1/Auto1Bold.otf');
+}
+@font-face {
+  font-family: font-auto1-light;
+  src: url('../resources/font/Font-Auto1/Auto1Light.otf');
+}
+@font-face {
+  font-family: font-auto1-regular;
+  src: url('../resources/font/Font-Auto1/Auto1Regular.otf');
+}
+@font-face {
+  font-family: font-auto1-regular-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1RegularSmCp.otf');
+}
+@font-face {
+  font-family: font-auto1-bold-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1BoldSmCp.otf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: roboto;
+  src: url('../resources/font/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: roboto-black;
+  src: url('../resources/font/Roboto/Roboto-Black.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url('../resources/font/Roboto/Roboto-Bold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: roboto-thin;
+  src: url('../resources/font/Roboto/Roboto-Thin.ttf');
+  font-weight: 300;
+}
+#areas {
+  background-color: #BAC12F;
+}
+#areas .areas-content {
+  padding: 100px;
+  text-align: center;
+  color: #1F2A44;
+  max-width: 875px;
+  margin: 0 auto;
+}
+#areas .areas-content h2 {
+  padding-bottom: 40px;
+}
+#areas .areas-content .areas-drop-down {
+  margin: 40px auto;
+  position: relative;
+  width: 360px;
+  height: 50px;
+  background-color: white;
+  color: #A0A0A0;
+  box-shadow: 2px 2px rgba(211, 211, 211, 0.6);
+  z-index: 10;
+}
+#areas .areas-content .areas-drop-down > div {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+}
+#areas .areas-content .areas-drop-down > div p {
+  font-size: 18px;
+}
+#areas .areas-content .areas-drop-down > ul {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+#areas .areas-content .areas-drop-down > ul > li {
+  background-color: white;
+  text-align: left;
+}
+#areas .areas-content .areas-drop-down > ul > li > a {
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+  color: #1F2A44;
+}
+#areas .areas-content .areas-drop-down > ul > li:hover {
+  background-color: #1F2A44;
+}
+#areas .areas-content .areas-drop-down > ul > li:hover a {
+  color: white;
+}
+#areas .areas-content .areas-drop-down-open > ul {
+  display: block;
+}
+@media screen and (max-width: 650px) {
+  #areas .areas-content {
+    padding: 20px;
+  }
+  #areas .areas-content .areas-drop-down {
+    width: 315px;
+  }
+}

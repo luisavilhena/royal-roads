@@ -1,0 +1,245 @@
+h1 {
+  font-size: 110px;
+  font-family: font-auto1-black-smcp;
+}
+h2 {
+  font-size: 52px;
+  font-family: font-auto1-black-smcp;
+}
+h3 {
+  font-family: roboto-black;
+  font-size: 48px;
+}
+h4 {
+  font-size: 26px;
+  font-family: font-auto1-black-smcp;
+}
+h5 {
+  font-family: roboto-bold;
+  font-size: 24px;
+}
+h6 {
+  font-family: roboto-bold;
+  font-size: 22px;
+  font-weight: 600px;
+}
+p {
+  font-size: 24px;
+  font-family: roboto;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.t1 {
+  font-family: font-auto1-black;
+  font-size: 35px;
+  font-feature-settings: "smcp" off;
+}
+.t2 {
+  font-family: font-auto1-black-lf;
+  font-size: 35px;
+}
+.t3 {
+  font-family: font-auto1-black-smcp;
+  font-size: 35px;
+}
+.t4 {
+  font-family: font-auto1-bold;
+  font-size: 35px;
+}
+.t5 {
+  font-family: font-auto1-light;
+  font-size: 35px;
+}
+.t6 {
+  font-family: font-auto1-regular;
+  font-size: 35px;
+}
+.t7 {
+  font-family: font-auto1-regular-smcp;
+  font-size: 35px;
+}
+.t8 {
+  font-family: font-auto1-bold-smcp;
+  font-size: 35px;
+}
+@font-face {
+  font-family: font-auto1-black;
+  src: url('../resources/font/Font-Auto1/Auto1Black.otf') format('opentype');
+}
+@font-face {
+  font-family: font-auto1-black-lf;
+  src: url('../resources/font/Font-Auto1/Auto1BlackLF.otf');
+}
+@font-face {
+  font-family: font-auto1-black-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1BlackSmCp.otf');
+}
+@font-face {
+  font-family: font-auto1-bold;
+  src: url('../resources/font/Font-Auto1/Auto1Bold.otf');
+}
+@font-face {
+  font-family: font-auto1-light;
+  src: url('../resources/font/Font-Auto1/Auto1Light.otf');
+}
+@font-face {
+  font-family: font-auto1-regular;
+  src: url('../resources/font/Font-Auto1/Auto1Regular.otf');
+}
+@font-face {
+  font-family: font-auto1-regular-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1RegularSmCp.otf');
+}
+@font-face {
+  font-family: font-auto1-bold-smcp;
+  src: url('../resources/font/Font-Auto1/Auto1BoldSmCp.otf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: roboto;
+  src: url('../resources/font/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: roboto-black;
+  src: url('../resources/font/Roboto/Roboto-Black.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url('../resources/font/Roboto/Roboto-Bold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: roboto-thin;
+  src: url('../resources/font/Roboto/Roboto-Thin.ttf');
+  font-weight: 300;
+}
+#banner {
+  overflow: hidden;
+  padding-top: 100px;
+  position: relative;
+}
+#banner .banner-fix-text {
+  z-index: 10;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#banner .banner-fix-text a {
+  display: block;
+  width: 46px;
+  margin: 40px auto;
+}
+#banner .banner-social-media {
+  position: absolute;
+  z-index: 10;
+  top: 42%;
+  right: 70px;
+  display: flex;
+  flex-direction: column;
+}
+#banner .banner-social-media a {
+  display: block;
+  margin-bottom: 20px;
+}
+#banner .banner-carousel .item {
+  position: relative;
+  height: 87vh;
+}
+#banner .banner-carousel .item .banner-carousel-text {
+  text-align: center;
+  margin-top: 13%;
+  color: white;
+}
+#banner .banner-carousel .item .banner-carousel-text h1 {
+  color: white;
+}
+#banner .banner-carousel .item .banner-carousel-text h3 {
+  margin-top: 30px;
+  font-family: font-auto1-black-smcp;
+}
+#banner .banner-carousel .item .banner-carousel-text p {
+  width: 60%;
+  margin: 20px auto;
+}
+#banner .banner-carousel .item .banner-carousel-text a {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-family: roboto;
+}
+#banner .banner-carousel .item-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../resources/img/carousel-1.png");
+  background-position: center;
+  background-size: auto auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner .banner-carousel .item-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../resources/img/carousel-2.png");
+  background-position: center;
+  background-size: auto auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner .banner-carousel .item-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../resources/img/carousel-3.png");
+  background-position: center;
+  background-size: auto auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner .banner-carousel .item-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../resources/img/carousel-3.png");
+  background-position: center;
+  background-size: auto auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner .banner-carousel .item-4 img {
+  margin-left: 20px;
+  transform: rotate(-90deg);
+}
+#banner .slick-dots {
+  bottom: 70px;
+}
+#banner .slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+}
+#banner .slick-dots li.slick-active button:before {
+  color: #29B3C9;
+}
+#banner .slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 650px) {
+  #banner {
+    padding-top: 74px;
+  }
+  #banner .banner-social-media {
+    right: 20px;
+  }
+}
