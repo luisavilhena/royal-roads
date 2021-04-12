@@ -139,7 +139,7 @@ p {
   z-index: 10;
   color: white;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -148,6 +148,17 @@ p {
   display: block;
   width: 46px;
   margin: 40px auto;
+}
+#banner .banner-fix-text a img {
+  animation: go-back 1s infinite alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 #banner .banner-social-media {
   position: absolute;
@@ -241,5 +252,8 @@ p {
   }
   #banner .banner-social-media {
     right: 20px;
+  }
+  #banner .banner-fix-text {
+    top: 40%;
   }
 }

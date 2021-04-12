@@ -134,7 +134,7 @@ p {
   font-size: 20px;
 }
 #testimony .testimony-carousel .item {
-  padding: 150px;
+  padding: 100px 80px 20px 80px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -196,13 +196,16 @@ p {
 }
 @media screen and (max-width: 1220px) {
   #testimony .testimony-carousel .slick-prev {
-    top: 83%;
+    top: 78%;
   }
   #testimony .testimony-carousel .slick-next {
-    top: 83%;
+    top: 78%;
   }
 }
 @media screen and (max-width: 1150px) {
+  #testimony .testimony-carousel .item img {
+    margin-right: 50px;
+  }
   #testimony .testimony-carousel .item div {
     height: 320px;
   }
@@ -214,13 +217,26 @@ p {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 870px) {
+  #testimony .testimony-carousel .slick-prev {
+    top: 85%;
+    left: 34%;
+  }
+  #testimony .testimony-carousel .slick-next {
+    top: 85%;
+    right: 43%;
+  }
+  #testimony .testimony-carousel .item {
+    padding: 40px 20px 40px 20px;
+  }
+}
 @media screen and (max-width: 650px) {
   #testimony .testimony-carousel .slick-prev {
-    top: 88%;
+    top: 85%;
     left: 25%;
   }
   #testimony .testimony-carousel .slick-next {
-    top: 88%;
+    top: 85%;
     right: 25%;
   }
   #testimony .testimony-carousel .item {

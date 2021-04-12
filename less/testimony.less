@@ -4,7 +4,7 @@
 	.testimony-carousel {
 		font-size: 20px;
 		.item {
-			padding: 150px;
+			padding: 100px 80px 20px 80px;
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
@@ -69,17 +69,19 @@
 	@media screen and (max-width: @max-width) {
 		.testimony-carousel {
 			.slick-prev {
-				top: 83%;
+				top: 78%;
 			}
 			.slick-next	{
-				top: 83%;
+				top: 78%;
 			}
 		}
 	}
 	@media screen and (max-width: @medium-width) {
 		.testimony-carousel {
 			.item {
-
+				img {
+					margin-right: 50px;
+				}
 				div {
 					height: 320px;
 					h3 {
@@ -90,6 +92,21 @@
 						font-size: 20px;//special size
 					}
 				}
+			}
+		}
+	}
+	@media screen and (max-width: @medium-sm-width) { 
+		.testimony-carousel {
+			.slick-prev {
+				top: 85%;
+				left: 34%;
+			}
+			.slick-next {
+				top: 85%;
+				right: 43%;
+			}
+			.item {
+				padding: 40px 20px 40px 20px;
 			}
 		}
 	}

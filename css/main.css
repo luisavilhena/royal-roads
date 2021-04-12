@@ -17,6 +17,17 @@
   width: 46px;
   margin: 40px auto;
 }
+#banner .banner-fix-text a img {
+  animation: go-back 1s infinite alternate;
+}
+@keyframes go-back {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 #banner .banner-social-media {
   position: absolute;
   z-index: 10;
@@ -208,7 +219,7 @@ header > nav.header-desktop .menu-drop-down:hover > ul > li:hover:before {
 header > nav.header-mobile {
   display: none;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 870px) {
   header {
     display: flex;
   }
@@ -667,7 +678,7 @@ p {
   font-size: 20px;
 }
 #testimony .testimony-carousel .item {
-  padding: 150px;
+  padding: 100px 80px 20px 80px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -729,13 +740,16 @@ p {
 }
 @media screen and (max-width: 1220px) {
   #testimony .testimony-carousel .slick-prev {
-    top: 83%;
+    top: 78%;
   }
   #testimony .testimony-carousel .slick-next {
-    top: 83%;
+    top: 78%;
   }
 }
 @media screen and (max-width: 1150px) {
+  #testimony .testimony-carousel .item img {
+    margin-right: 50px;
+  }
   #testimony .testimony-carousel .item div {
     height: 320px;
   }
@@ -745,6 +759,19 @@ p {
   }
   #testimony .testimony-carousel .item div h6 {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 870px) {
+  #testimony .testimony-carousel .slick-prev {
+    top: 85%;
+    left: 34%;
+  }
+  #testimony .testimony-carousel .slick-next {
+    top: 85%;
+    right: 43%;
+  }
+  #testimony .testimony-carousel .item {
+    padding: 40px 20px 40px 20px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -866,7 +893,7 @@ p {
   padding-left: 60px;
   background-color: #1F2A44;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 870px) {
   #programs h2 {
     padding: 20px;
   }

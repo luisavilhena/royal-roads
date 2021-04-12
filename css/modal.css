@@ -244,14 +244,14 @@ p {
   top: 5px;
 }
 @media screen and (max-width: 650px) {
-  #modal > div {
-    padding: 20px;
+  #modal.modal-open > div {
+    padding: 50px 20px;
   }
-  #modal > div input {
+  #modal.modal-open > div input {
     padding-left: 10px;
     width: 293px;
   }
-  #modal > div select {
+  #modal.modal-open > div select {
     padding-left: 10px;
     width: 305px;
   }

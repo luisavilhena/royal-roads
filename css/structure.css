@@ -1,6 +1,49 @@
+h1 {
+  font-size: 110px;
+  font-family: font-auto1-black-smcp;
+}
 h2 {
   font-size: 52px;
   font-family: font-auto1-black-smcp;
+}
+h3 {
+  font-family: roboto-black;
+  font-size: 48px;
+}
+h4 {
+  font-size: 26px;
+  font-family: font-auto1-black-smcp;
+}
+h5 {
+  font-family: roboto-bold;
+  font-size: 24px;
+}
+h6 {
+  font-family: roboto-bold;
+  font-size: 22px;
+  font-weight: 600px;
+}
+p {
+  font-size: 24px;
+  font-family: roboto;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 .t1 {
   font-family: font-auto1-black;

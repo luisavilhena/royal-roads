@@ -17,6 +17,17 @@
     	display: block;
     	width: 46px;
     	margin: 40px auto;
+    	img {
+    		animation: go-back 1s infinite alternate;
+    	}
+    	@keyframes go-back {
+    	  from {
+    	    transform: translateY(10px);
+    	  }
+    	  to {
+    	    transform: translateY(0);
+    	  }
+    	}
     }
 	}
 	.banner-social-media {
